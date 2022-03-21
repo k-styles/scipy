@@ -415,6 +415,7 @@ def _basic_simpson(y, start, stop, x, dx, axis):
         tmp = hsum/6.0 * (y[slice0] * (2 - 1.0/h0divh1) +
                           y[slice1] * (hsum * hsum / hprod) +
                           y[slice2] * (2 - h0divh1))
+        print("0: ",h0divh1)
         print("1: ",(2 - 1.0/h0divh1))
         print("2: ",hsum * hsum / hprod)
         print("3: ",(2 - h0divh1))
